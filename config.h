@@ -37,4 +37,4 @@
 #define HTTP_TIMEOUT_MS 10000
 
 // ── Polling interval ──────────────────────────────────────────────────────────
-#define READING_INTERVAL_MS  900000UL   // 15 minutes (matches Pi timer)
+#define READING_INTERVAL_MS  60000UL   // 1 minute (matches Pi timer)

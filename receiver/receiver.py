@@ -77,4 +77,5 @@ if __name__ == "__main__":
     init_db()
     print(f"[Receiver] Listening on http://{HOST}:{PORT}")
     print(f"[Receiver] Database: {DB_PATH}")
-    app.run(host=HOST, port=PORT, debug=False)
+    from waitress import serve
+    serve(app, host=HOST, port=PORT)
